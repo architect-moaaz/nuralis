@@ -1,4 +1,5 @@
 import React, { useEffect, useState } from "react";
+import { SpeedInsights } from "@vercel/speed-insights/react"
 
 /**
  * Nuralis.ai – Lead‑Gen Landing Page (bug‑free build)

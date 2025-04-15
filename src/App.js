@@ -189,7 +189,7 @@ export default function App() {
       {/* Header */}
       <header className={`header${shrink ? ' shrink' : ''}`}>
         <div className="container header-inner">
-          <img src="/assets/nuralis-logo-gold.ico" alt="Nuralis" className="logo" />
+          <img src="/assets/nuralis-logo.png" alt="Nuralis" className="logo" />
           <nav className="nav-links">
             <a href="#solutions" onClick={e=>{e.preventDefault();scrollTo('solutions')}}>Solutions</a>
             <a href="#usecases" onClick={e=>{e.preventDefault();scrollTo('usecases')}}>Use Cases</a>
@@ -274,7 +274,7 @@ export default function App() {
 
       {/* Footer */}
       <footer>
-        <img src="/assets/nuralis-logo-gold.ico" alt="Nuralis Logo" className="footer-logo" />
+        <img src="/assets/nuralis-logo.png" alt="Nuralis Logo" className="footer-logo" />
         <p>© 2025 Nuralis.ai — All rights reserved.</p>
       </footer>
     </>

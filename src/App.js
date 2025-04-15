@@ -195,7 +195,7 @@ export default function App() {
             <a href="#usecases" onClick={e=>{e.preventDefault();scrollTo('usecases')}}>Use Cases</a>
             <a href="#contact" onClick={e=>{e.preventDefault();scrollTo('contact')}}>Contact</a>
           </nav>
-          <button className="btn header-cta" onClick={()=>scrollTo('contact')}>Know More</button>
+         {/* <button className="btn header-cta" onClick={()=>scrollTo('contact')}>Know More</button>*/} 
         </div>
       </header>
 

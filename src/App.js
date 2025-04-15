@@ -14,7 +14,7 @@ const goldPhrases = [
   "Operations",
   "Business",
   "Automation",
-  "Data",
+  "Data Analysis",
   "Future",
 ];
 
@@ -90,7 +90,21 @@ export default function App() {
       {/* ---------------- Inline CSS ---------------- */}
       <style>{`
         :root{--black:#000;--white:#fff;--gray-100:#f5f5f7;--gray-200:#e9e9ec;--gray-700:#6b6b6b;--gold:#b89b5e;--radius:24px;--space:160px;--space-m:96px}
-        @media(max-width:640px){:root{--space:var(--space-m)}}
+        @media(max-width:640px){:root{--space:var(--space-m)}
+        .hero-line { flex-direction: column; align-items: center; font-size: 2rem; text-align: center; }
+        .hero-cta { position: static; margin-top: 2rem; transform: none; }
+        .header-inner { flex-direction: column; gap: 1rem; height: auto; padding: 1rem 0; }
+        .logo { height: 32px; }
+        .grid { grid-template-columns: 1fr !important; }
+        .ucard { height: auto; }
+        .ucard-inner { height: auto; min-height: 260px; }
+        .ucard-face { padding: 1.2rem; font-size: 0.95rem; }
+        .nav-links a { display: none; }
+        .header-cta { margin-left: 0; }
+        .container { padding: 0 1rem; }
+        .cta p { padding: 0 1rem; }
+        .footer-logo { width: 100px; }
+      }
         *{box-sizing:border-box;margin:0;padding:0}
         body{font-family:-apple-system,BlinkMacSystemFont,'SF Pro','Segoe UI',Roboto,sans-serif;background:var(--gray-100);color:var(--black);line-height:1.6;-webkit-font-smoothing:antialiased}
         h1,h2{font-weight:700;letter-spacing:-.45px;margin-bottom:1rem}
@@ -109,8 +123,8 @@ export default function App() {
         .header{background:var(--white);position:sticky;top:0;z-index:1000;border-bottom:1px solid var(--gray-200);transition:height .3s ease}
         .header-inner{display:flex;align-items:center;justify-content:space-between;height:72px;transition:height .3s ease}
         .header.shrink .header-inner{height:56px}
-        .logo{height:140px;transition:height .3s ease}
-        .header.shrink .logo{height:100px}
+        .logo{height:40px;transition:height .3s ease}
+        .header.shrink .logo{height:32px}
         .nav-links{display:flex;align-items:center}
         .nav-links a{margin-left:2rem;font-weight:500;position:relative}
         .nav-links a::after{content:"";position:absolute;left:0;bottom:-6px;width:0;height:2px;background:var(--gold);transition:width .25s ease}
@@ -168,19 +182,19 @@ export default function App() {
 
         /* Footer */
         footer{background:var(--black);color:var(--white);text-align:center;padding:4rem 1rem}
-        .footer-logo{width:150px;margin-bottom:1.5rem;filter:brightness(0) invert(1)}
+        .footer-logo{width:150px;margin-bottom:1.5rem;filter: none}
       `}</style>
 
       {/* Header */}
       <header className={`header${shrink ? ' shrink' : ''}`}>
         <div className="container header-inner">
-          <img src="/nuralis-logo.png" alt="Nuralis" className="logo" />
+          <img src="/assets/nuralis-logo-gold.ico" alt="Nuralis" className="logo" />
           <nav className="nav-links">
             <a href="#solutions" onClick={e=>{e.preventDefault();scrollTo('solutions')}}>Solutions</a>
             <a href="#usecases" onClick={e=>{e.preventDefault();scrollTo('usecases')}}>Use Cases</a>
             <a href="#contact" onClick={e=>{e.preventDefault();scrollTo('contact')}}>Contact</a>
           </nav>
-         {/*  <button className="btn header-cta" onClick={()=>scrollTo('contact')}>Know More</button>*/}
+          <button className="btn header-cta" onClick={()=>scrollTo('contact')}>Know More</button>
         </div>
       </header>
 
@@ -191,7 +205,7 @@ export default function App() {
           <span className="dynamic-wrapper">
             {goldPhrases.map((g,i)=>(
               <span key={i} className={`phrase${i===phraseIdx?' active':''}`}> 
-                <span className="white">{i===4 ? 'for ' : 'for '}</span><span className="gold">{g}</span>
+                <span className="white">{i===4 ? 'for the ' : 'for '}</span><span className="gold">{g}</span>
               </span>
             ))}
           </span>
@@ -259,7 +273,7 @@ export default function App() {
 
       {/* Footer */}
       <footer>
-        <img src="/nuralis-logo.png" alt="Nuralis Logo" className="footer-logo" />
+        <img src="/assets/nuralis-logo-gold.ico" alt="Nuralis Logo" className="footer-logo" />
         <p>© 2025 Nuralis.ai — All rights reserved.</p>
       </footer>
     </>

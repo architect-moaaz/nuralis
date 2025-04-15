@@ -95,7 +95,7 @@ export default function App() {
         .hero-line { flex-direction: column; align-items: center; font-size: 2rem; text-align: center; }
         .hero-cta { position: static; margin-top: 2rem; transform: none; }
         .header-inner { flex-direction: column; gap: 1rem; height: auto; padding: 1rem 0; }
-        .logo { height: 32px; }
+        .logo { height: 150px; }
         .grid { grid-template-columns: 1fr !important; }
         .ucard { height: auto; }
         .ucard-inner { height: auto; min-height: 260px; }
@@ -125,7 +125,7 @@ export default function App() {
         .header-inner{display:flex;align-items:center;justify-content:space-between;height:72px;transition:height .3s ease}
         .header.shrink .header-inner{height:56px}
         .logo{height:40px;transition:height .3s ease}
-        .header.shrink .logo{height:32px}
+        .header.shrink .logo{height:100px}
         .nav-links{display:flex;align-items:center}
         .nav-links a{margin-left:2rem;font-weight:500;position:relative}
         .nav-links a::after{content:"";position:absolute;left:0;bottom:-6px;width:0;height:2px;background:var(--gold);transition:width .25s ease}

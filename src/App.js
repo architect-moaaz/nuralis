@@ -124,7 +124,7 @@ export default function App() {
         .header{background:var(--white);position:sticky;top:0;z-index:1000;border-bottom:1px solid var(--gray-200);transition:height .3s ease}
         .header-inner{display:flex;align-items:center;justify-content:space-between;height:72px;transition:height .3s ease}
         .header.shrink .header-inner{height:56px}
-        .logo{height:40px;transition:height .3s ease}
+        .logo{height:150px;transition:height .3s ease}
         .header.shrink .logo{height:100px}
         .nav-links{display:flex;align-items:center}
         .nav-links a{margin-left:2rem;font-weight:500;position:relative}

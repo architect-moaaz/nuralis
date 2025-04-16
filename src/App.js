@@ -274,7 +274,7 @@ export default function App() {
 
       {/* Footer */}
       <footer>
-        <img src="nuralis-logo.png" alt="Nuralis Logo" className="footer-logo" />
+        <img src="nuralis-logo-alt.png" alt="Nuralis Logo" className="footer-logo" />
         <p>© 2025 Nuralis.ai — All rights reserved.</p>
       </footer>
     </>
